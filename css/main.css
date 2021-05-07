@@ -1,0 +1,17 @@
+main {
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  --page: 0;
+  top: calc(var(--page) * 100vh);
+  height: 100vh;
+  width: 100%;
+  background: rgba(
+    calc(var(--page) + 10),
+    calc(var(--page) * 55),
+    calc(var(--page) * 255),
+    calc(var(--page) * 50)
+  );
+}
