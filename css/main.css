@@ -1,29 +1,68 @@
-main {
-  position: relative;
-  
-  
-}
-body{
-  margin: 0%;
-}
-header{
-color: #fff;
-font-style:normal;
-font-size: 5vh;
-text-align: center;
-background-color: rgb(105, 168, 226);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
 }
 
+.grid-container{
+  height: 200vh;
+  border: 10px solid green;
+  display: grid;
+  grid-template-rows: 10% repeat(4, 20fr)10%;
+  grid-template-columns:1fr;
+ 
+  
+  
+}
+
+.grid-page{
+  padding: 20px;
+  height: 45vh;
+border: 10px solid yellow;
+
+}
 nav{
-color: #000;
-font-style:normal;
-font-size: 2vh;
-
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  padding: 2%;
+ 
+  
 
 }
+.page-1{
+  background-color: rgb(105, 168, 226);
+  font-style:normal;
+  text-align: center;
+  color: #fff;
+  height: 10vh;
+}
+.page-2{
+  background-color: orange;
+  
+}
+.page-3{
+  background-color: palegreen;
 
-.page {
-  position: absolute;
+}
+.page-4{
+  background-color: palevioletred;
+}
+.page-5{
+  background-color: peru;
+}
+
+.page-6{
+  background-color: rgb(105, 168, 226);
+  color: white; 
+  text-align: center;
+  height: 10vh;
+}
+
+
+/*   position: absolute;
   --page: 0;
   top: calc(var(--page) * 100vh);
   height: 100vh;
@@ -33,24 +72,10 @@ font-size: 2vh;
     calc(var(--page) * 55),
     calc(var(--page) * 255),
     calc(var(--page) * 50)
-  );
-}
+  ); */
 
-
-
-footer{
-  background-color:skyblue;
-  color: white;
-  height: 50px;
-  text-align: center;
-  font-size: 200%;
-
-}
-h1{
-  color: #000;
-  font-size: 155%;
-}
-h2{
-  color: white;
-  font-size: 155%;
-}
+ /*  grid-template-rows: 100px;
+  grid-template-columns: repeat(5, 100px);
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around; */
