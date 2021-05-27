@@ -4,63 +4,66 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 30px;
+  color: white; 
 }
 
 .grid-container{
-  height: 200vh;
-  border: 10px solid green;
+  height: 400vh;
   display: grid;
-  grid-template-rows: 10% repeat(4, 20fr)10%;
-  grid-template-columns:1fr;
- 
-  
-  
+
 }
 
 .grid-page{
   padding: 20px;
-  height: 45vh;
-border: 10px solid yellow;
+  height: 92.5vh;
+
 
 }
 nav{
   display: flex;
   flex-direction:row;
   justify-content: space-evenly;
-  padding: 2%;
- 
   
-
 }
 .page-1{
-  background-color: rgb(105, 168, 226);
+  background-color: rgb(54, 127, 223);
   font-style:normal;
   text-align: center;
-  color: #fff;
   height: 10vh;
-}
-.page-2{
-  background-color: orange;
   
 }
+
+.page-2{
+  background-color: rgb(63, 117, 194);
+  height: 7vh;
+}
+
 .page-3{
-  background-color: palegreen;
+  background-color: rgb(55, 96, 155);
+  
 
 }
+
 .page-4{
-  background-color: palevioletred;
+  background-color: rgb(38, 78, 134);
+ 
 }
+
 .page-5{
-  background-color: peru;
+  background-color: rgb(27, 61, 109);
+  
+
 }
 
 .page-6{
-  background-color: rgb(105, 168, 226);
-  color: white; 
-  text-align: center;
-  height: 10vh;
+  background-color: rgb(12, 44, 85);
+  
 }
-
+.page-7{
+  background-color: rgb(8, 33, 66);
+  text-align: center;
+  height: 15vh;
+}
 
 /*   position: absolute;
   --page: 0;
