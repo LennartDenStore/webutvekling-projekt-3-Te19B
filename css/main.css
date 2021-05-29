@@ -1,68 +1,59 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 30px;
-  color: white; 
+  
+  color: white;
 }
 
-.grid-container{
-  height: 400vh;
+.grid-container {
+  height: 100vh;
   display: grid;
-
+  align-items: center;
+  
 }
 
-.grid-page{
+.grid-page {
   padding: 20px;
-  height: 92.5vh;
-
-
+  height: 40%;
+  font-size: 30px;
 }
-nav{
+nav {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-evenly;
-  
-}
-.page-1{
-  background-color: rgb(54, 127, 223);
-  font-style:normal;
-  text-align: center;
-  height: 10vh;
-  
-}
-
-.page-2{
-  background-color: rgb(63, 117, 194);
-  height: 7vh;
-}
-
-.page-3{
-  background-color: rgb(55, 96, 155);
-  
-
-}
-
-.page-4{
-  background-color: rgb(38, 78, 134);
  
 }
+.page-1 {
+  background-color: rgb(54, 127, 223);
+  font-style: normal;
+  text-align: center;
+  height: 10vh;
+  font-size: 50px;
+}
 
-.page-5{
+.page-2 {
+  background-color: rgb(63, 117, 194);
+}
+
+.page-3 {
+  background-color: rgb(55, 96, 155);  
+}
+
+.page-4 {
+  background-color: rgb(38, 78, 134);
+  padding: 2rem;
+}
+
+.page-5 {
   background-color: rgb(27, 61, 109);
-  
-
+ padding: 2rem;
 }
 
-.page-6{
-  background-color: rgb(12, 44, 85);
-  
-}
-.page-7{
+.page-6 {
   background-color: rgb(8, 33, 66);
   text-align: center;
-  height: 15vh;
+  height: 10vh;
 }
 
 /*   position: absolute;
@@ -77,47 +68,80 @@ nav{
     calc(var(--page) * 50)
   ); */
 
- /*  grid-template-rows: 100px;
+/*  grid-template-rows: 100px;
   grid-template-columns: repeat(5, 100px);
   justify-items: center;
   align-items: center;
   justify-content: space-around; */
 
-  .TAC,
-  .about{
-    font-family: Releway, sans-serif;
-    text-decoration: none;
-    color:black;
-    background-color: blanchedalmond;
-
-  }
+.TAC,
+.about {
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  
+  
+  opacity: 7.5;
+}
 .TAC:hover,
-.about:hover{
-  background-color:lightblue;
+.about:hover {
+  color: lightblue;
 }
 
-.TACtext{
+.TACtext {
   overflow: scroll;
   height: 20rem;
   padding: 2rem;
 
-  font-size: 10px;
+  font-size: 20px;
   background-color: white;
   border: white solid 5px;
-  border-radius: 10px;
-  color:black;
-  
+  border-radius: 20px;
+  color: black;
+  transition: all 0.2s ease-in-out;
 }
 
-.TACtext::-webkit-scrollbar-track{
+.TACtext::-webkit-scrollbar-track {
   background-color: black;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-button{
-  font-family: "Raleway", sans-serif;
+button {
+  
+  background-color: rgb(8, 33, 66);
   font-weight: bolder;
+}
+.image-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+.image-list img {
+  height: 20vh;
+  transform: scale(1);
+  opacity: 0.5;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+  border: white 10px solid;
+  margin: 1rem;
+  
+}
+
+.image-list img:hover {
+  z-index: 9999;
+  transform: scale(1.25);
+  opacity: 1;
+}
+h2{
+  text-align: center;
+}
+head{
+  font-size: 10vh;
 }

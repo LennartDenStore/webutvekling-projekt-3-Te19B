@@ -9,7 +9,7 @@ function termsAndConditions(){
 }
 
 function aboutClick(){
-    var aC = document.querySelector(".aboutCAD")
+    var aC = document.querySelector(".Butiksinredning")
     if (aC.style.display === "none"){
         aC.style.display = "block";
     }
